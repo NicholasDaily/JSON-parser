@@ -10,19 +10,12 @@ public class JsonList extends Json {
 		super(JsonType.LIST);
 	}
 	
-	JsonList(String key){
-		super(key, JsonType.LIST);
-	}
 	
 	JsonList(ArrayList<Json> value){
 		super(JsonType.LIST);
 		this.value = value;
 	}
 	
-	JsonList(ArrayList<Json> value, String key){
-		super(key, JsonType.LIST);
-		this.value = (ArrayList<Json>) value.clone();
-	}
 	
 	public void setValue(ArrayList<Json> value) {
 		this.value = value;
@@ -34,17 +27,29 @@ public class JsonList extends Json {
 		}
 	}
 	
-	public void setValue(Json ... item) {
+	public void setValues(Json ... item) {
 		clear();
 		add(item);
+	}
+	
+	public void setValue(int index, Json value) {
+		this.value.add(index, value);
 	}
 	
 	public void clear() {
 		this.value.clear();
 	}
 	
-	public ArrayList<Json> getValue() {
+	public ArrayList<Json> getValues() {
 		return (ArrayList<Json>) value.clone();
+	}
+	
+	public Json get(int index) {
+		return value.get(index);
+	}
+	
+	public int size() {
+		return value.size();
 	}
 	
 	@Override

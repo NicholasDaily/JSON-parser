@@ -14,11 +14,6 @@ public class JsonString extends Json {
 		this.value = value;
 	}
 	
-	JsonString(String value, String key){
-		super(key, JsonType.STRING);
-		this.value = value;
-	}
-	
 	public void setValue(String value) {
 		this.value = value;
 	}

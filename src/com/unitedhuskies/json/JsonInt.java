@@ -9,18 +9,8 @@ public class JsonInt extends Json {
 		this.value = 0;
 	}
 	
-	JsonInt(String key){
-		super(key, JsonType.INT);
-		this.value = 0;
-	}
-	
 	JsonInt(int value){
 		super(JsonType.INT);
-		this.value = value;
-	}
-	
-	JsonInt(int value, String key){
-		super(key, JsonType.INT);
 		this.value = value;
 	}
 	

@@ -96,16 +96,14 @@ public class JsonParser {
 				break;
 			}else if(val != null && (char) numCode == '}' ) {
 				numCode=69;
-				val.setKey(key);
-				obj.add(val);
+				obj.add(key, val);
 				break;
 			}
 			else {
 				if(key.equals("") && val instanceof JsonString)
 					key = val.toString().replace("\"", "");
 				else {
-					val.setKey(key);
-					obj.add(val);
+					obj.add(key, val);
 					key="";
 				}
 			}

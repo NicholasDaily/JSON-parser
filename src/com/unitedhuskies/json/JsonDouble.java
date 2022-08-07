@@ -8,18 +8,8 @@ public class JsonDouble extends Json {
 		this.value = 0;
 	}
 	
-	JsonDouble(String key){
-		super(key, JsonType.DOUBLE);
-		this.value = 0;
-	}
-	
 	JsonDouble(double value){
 		super(JsonType.DOUBLE);
-		this.value = value;
-	}
-	
-	JsonDouble(double value, String key){
-		super(key, JsonType.DOUBLE);
 		this.value = value;
 	}
 	
