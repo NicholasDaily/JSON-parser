@@ -1,4 +1,4 @@
-package com.unitedhuskies.json;
+package com.nicholasDaily.json;
 
 public class JsonDouble extends Json {
 	private double value;

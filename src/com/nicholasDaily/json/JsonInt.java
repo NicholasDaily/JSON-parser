@@ -1,4 +1,4 @@
-package com.unitedhuskies.json;
+package com.nicholasDaily.json;
 
 public class JsonInt extends Json {
 	

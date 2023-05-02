@@ -1,4 +1,4 @@
-package com.unitedhuskies.json;
+package com.nicholasDaily.json;
 
 public abstract class Json{
 	public static enum JsonType{

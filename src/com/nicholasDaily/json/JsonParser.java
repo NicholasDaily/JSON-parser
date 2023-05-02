@@ -1,4 +1,4 @@
-package com.unitedhuskies.json;
+package com.nicholasDaily.json;
 
 import java.io.FileNotFoundException;
 import java.util.Scanner;
